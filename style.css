@@ -1,0 +1,44 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: linear-gradient(to right, #dc3545, #ffc107, #28a745); /* Linear gradient from left (red) to right (green) */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 60%; /* Adjust based on your preference */
+    margin: 0 20px; /* Space between the buttons and the image */
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.fixed-size-image {
+    width: 800px; /* Adjust the width as needed */
+}
+.gif-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Higher z-index to appear on top */
+}
+.gif-overlay img {
+    width: 600px; /* Adjust the width as needed */
+    height: 600px; /* Adjust the height as needed */
+}
