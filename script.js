@@ -86,7 +86,10 @@ function showRandomImage(love) {
 }
 
 // custom cursor
-var playground = document.getElementById('overlayImage');
+var playground = [
+  document.getElementById('overlayImage'),
+  document.getElementById('gifOverlay'),
+];
 
 var cursorArray = ['url("cursor/0.gif"), auto',
                    'url("cursor/1.gif"), auto',
@@ -95,7 +98,8 @@ var cursorArray = ['url("cursor/0.gif"), auto',
                    'url("cursor/4.gif"), auto',];
 i = 0;
 (function cursor(){
-  playground.style.cursor  = cursorArray[i];
+  playground[0].style.cursor  = cursorArray[i];
+  playground[1].style.cursor  = cursorArray[i];
   i++;
   if(i == cursorArray.length){
     i = 0; 
