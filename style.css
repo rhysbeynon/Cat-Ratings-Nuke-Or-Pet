@@ -83,6 +83,21 @@ img {
     }
 }
 
+@media (max-width: 600px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40vw 3.5vw;
+        background-color: #ffffffc7;
+        box-shadow: 0 1px 40px -10px #000000;
+        color: rgb(0, 0, 0);
+        opacity: 100%;
+        border-radius: 20px;
+        
+    }
+}
+
 #overlayImage {
     height: 60vh;
     margin-top: 10vh;
@@ -137,3 +152,12 @@ img {
         margin: 7vw 5vw;
         size: 30vw 10vh;
     }
+
+@media screen and (max-width: 600px) {
+    a {
+        color: black;
+        background-color: #ffffff;
+        background-size: auto;
+    }
+    
+}
