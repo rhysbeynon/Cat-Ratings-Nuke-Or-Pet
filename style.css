@@ -1,5 +1,26 @@
 body {
-    background: linear-gradient(to right, #dc3545, #ffc107, #28a745); /* Linear gradient from left (red) to right (green) */
+    background: linear-gradient(to right, #71a17c, #dee99e, #dfa5ab); /* Linear gradient from left (red) to right (green) */
+}
+
+#headerBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 40px 6px #000000;
+    opacity: 90%;
+    color: rgb(0, 0, 0);
+
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 4vh;
+    margin-left: 6vw;
+    display: flex;
+    opacity: 100%;
 }
 
 .container {
@@ -17,8 +38,16 @@ img {
     
 }
 .fixed-size-image {
-    width: 800px; /* Adjust the width as needed */
+    width: 80vw; /* Adjust the width as needed */
+    height: auto;
 }
+@media (max-width: 600px) {
+    .fixed-size-image {
+    box-shadow: 0 1px 40px -10px #000000;
+    width: 100vw;
+    }
+}
+
 .gif-overlay {
     position: fixed;
     top: 0;
@@ -31,8 +60,28 @@ img {
     z-index: 9999; /* Higher z-index to appear on top */
 }
 .gif-overlay img {
-    width: 600px; /* Adjust the width as needed */
-    height: 600px; /* Adjust the height as needed */
+    width: 600px;
+    height: 600px; 
+}
+
+@media (max-width: 600px) {
+    .gif-overlay {
+        margin-top: 30vh;
+        height: 50%;
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 600px) {
+    #overlayImage {
+        height: 70vh;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+    
+    }
 }
 
 #overlayImage {
@@ -48,3 +97,42 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 600px) {
+    #centerContent {
+        flex-direction: column;
+        margin-top: -78px;
+    }
+}
+
+@media (max-width: 600px) {
+    #headerBar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5vw 3.5vw;
+        background-color: #ffffffc7;
+        box-shadow: 0 1px 40px -10px #000000;
+        color: rgb(0, 0, 0);
+        opacity: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        container-type: flex;
+        font-size: 3.5vh;
+        margin: 5vw 5vw;
+    }
+}
+@media (max-width: 600px) {
+    .choiceButton {
+        box-shadow: 0 1px 40px -10px #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 5vh; */
+        margin: 7vw 5vw;
+        size: 30vw 10vh;
+    }

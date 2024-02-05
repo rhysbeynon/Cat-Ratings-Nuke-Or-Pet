@@ -17,27 +17,27 @@ leftButton.addEventListener('click', function() {
 rightButton.addEventListener('click', function() {
     this.disabled=true;
     leftButton.disabled=true;
-    showRandomImage(true);
-    fetchCatImage();
     setTimeout(() => {
         this.disabled=false;
         leftButton.disabled=false;
     },1200);
+    showRandomImage(true);
+    fetchCatImage();
   
 });
 
 document.addEventListener('keydown', function(event) {
-    if (event.key === 'ArrowRight') {
+    if (event.key === 'ArrowLeft') {
         document.getElementById('rightButton').click();
     }
-    else if (event.key === 'ArrowLeft' ) {
+    else if (event.key === 'ArrowRight' ) {
         document.getElementById('leftButton').click();      
     }
 });
 
 document.addEventListener("DOMContentLoaded", function(event) {fetchCatImage()})
 function fetchCatImage() {
-    const apiKey = 'live_bBbF7OFOfNn3WL4rQ2uwAicMz3I2AtfNC9PqPEcSt0QHF7SjwQVsjZ1sTj2xmJHM'; // Replace with your actual API key
+    const apiKey = 'live_bBbF7OFOfNn3WL4rQ2uwAicMz3I2AtfNC9PqPEcSt0QHF7SjwQVsjZ1sTj2xmJHM';
     const url = 'https://api.thecatapi.com/v1/images/search';
 
     fetch(url, {

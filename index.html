@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <h1 class="text-center">Cat Ratings</h1> -->
+    <div id="headerBar">
+        <h2 class="text-center">Nuke 💣 or Pet 🐈</h2>
+    </div>
     <div id="centerContent" class="container text-center">
         <div class="row justify-content-center align-items-center">
             <div class="col-auto">
-                <button id="leftButton" class="btn text-nowrap btn-danger">NUKE</button>
-            </div>
-            <div class="col-auto">
-                <div class="d-flex justify-content-center"> <!-- Center the image horizontally -->
-                    <img id="overlayImage" src="placeholder.gif" alt="Cat Image" class="rounded border border-white img-fluid fixed-size-image">
+                <div class="d-flex justify-content-center">
+                    <img id="overlayImage" src="placeholder.gif" alt="Cat Image" class="border border-white img-fluid fixed-size-image">
                 </div>
             </div>
             <div class="col-auto">
-                <button id="rightButton" class="btn btn-success">PET</button>
+                <button id="rightButton" class="btn btn-success choiceButton">PET</button>
+            </div>
+            <div class="col-auto">
+                <button id="leftButton" class="btn text-nowrap btn-danger choiceButton">NUKE</button>
             </div>
         </div>
     </div>
