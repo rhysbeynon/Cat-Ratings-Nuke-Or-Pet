@@ -66,16 +66,15 @@ img {
 
 @media (max-width: 600px) {
     .gif-overlay {
-        margin-top: 30vh;
-        height: 50%;
-        width: 100%;
+        margin-top: 9.5vh;
+        height: 50vh;
 
     }
 }
 
 @media (max-width: 600px) {
     #overlayImage {
-        height: 70vh;
+        height: 60vh;
         margin-top: 10vh;
         display: flex;
         justify-content: center;
@@ -85,7 +84,7 @@ img {
 }
 
 #overlayImage {
-    height: 70vh;
+    height: 60vh;
     margin-top: 10vh;
     display: flex;
     justify-content: center;
@@ -101,16 +100,18 @@ img {
 @media (max-width: 600px) {
     #centerContent {
         flex-direction: column;
-        margin-top: -78px;
+        margin-top: -10vh;
+        margin-bottom: -10vh;
     }
 }
 
 @media (max-width: 600px) {
     #headerBar {
         display: flex;
+        height: 5vh;
         justify-content: center;
         align-items: center;
-        margin: 5vw 3.5vw;
+        margin: 3.5vw 3.5vw;
         background-color: #ffffffc7;
         box-shadow: 0 1px 40px -10px #000000;
         color: rgb(0, 0, 0);
@@ -122,7 +123,7 @@ img {
 @media (max-width: 600px) {
     h2 {
         container-type: flex;
-        font-size: 3.5vh;
+        font-size: 2.5vh;
         margin: 5vw 5vw;
     }
 }
