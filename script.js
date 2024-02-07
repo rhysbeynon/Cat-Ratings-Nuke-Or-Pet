@@ -1,3 +1,5 @@
+
+
 //clean
 const leftButton = document.getElementById('leftButton');
 const rightButton = document.getElementById('rightButton');
@@ -94,8 +96,8 @@ function showRandomImage(love) {
 
     // Automatically hide the overlay after 1.2 seconds
     setTimeout(function () {
-        effect.style.display = 'none';
         stopShakeAnimation();
+        effect.style.display = 'none';
     }, 1200);
 }
 
