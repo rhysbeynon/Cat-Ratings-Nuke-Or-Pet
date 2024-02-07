@@ -111,6 +111,7 @@ img {
 
 .gif-overlay {
         position: fixed;
+        display: none;
         top: 0;
         left: 0;
         width: 100%;
@@ -119,10 +120,6 @@ img {
         justify-content: center;
         align-items: center;
         z-index: 9999; /* Higher z-index to appear on top */
-}
-.gif-overlay img {
-    width: 600px;
-    height: 600px; 
 }
 
 @media (max-width: 600px) {
