@@ -45,7 +45,7 @@ h2 {
     }
 
     /* Do not invert media (revert the invert). */
-    img, video, iframe {
+    img, video, iframe, h2 {
         filter: invert(100%) hue-rotate(180deg);
     }
     /* Improve contrast on icons. */
@@ -127,15 +127,17 @@ img {
 
 @media (max-width: 600px) {
     .gif-overlay {
-        margin-top: 9.5vh;
-        height: 50vh;
+        margin-top: 0vh;
+        display: flex;
+        justify-content: center;
+        max-height: 60vh
 
     }
 }
 
 @media (max-width: 600px) {
     #overlayImage {
-        height: 60vh;
+        max-height: 60vh;
         margin-top: 10vh;
         display: flex;
         justify-content: center;
@@ -150,6 +152,7 @@ img {
         justify-content: center;
         align-items: center;
         margin: 40vw 3.5vw;
+        margin-top: 10vh;
         background-color: #ffffffc7;
         box-shadow: 0 1px 40px -10px #000000;
         color: rgb(0, 0, 0);
@@ -225,9 +228,10 @@ img {
         margin: 3.5vw 3.5vw;
         background-color: #ffffffbb;
         box-shadow: 0 1px 40px -10px #ffffff;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         opacity: 100%;
         border-radius: 20px;
+        filter: invert(180deg) hue-rotate(180deg);
     }
 }
 @media (prefers-color-scheme: dark) {
