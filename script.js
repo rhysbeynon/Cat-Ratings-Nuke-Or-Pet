@@ -59,14 +59,27 @@ function randomBomb(min,max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
+function startShakeAnimation() {
+    var element = document.getElementById("overlayImage");
+    element.classList.add("nukeEffect");
+}
+function stopShakeAnimation() {
+    var element = document.getElementById("overlayImage");
+    element.classList.remove("nukeEffect");
+}
+
+
 //Im tired
 function showRandomImage(love) {
     const gifOverlay = document.getElementById('gifOverlay');
     const effect = document.getElementById('effect');
     var randomImagePath;
+    var nukeEffect;
     if(!love){
         // Get a random image path for a bomb
         randomImagePath = 'media\\bomb' + randomBomb(1,5) + '.gif';
+        startShakeAnimation();
     }
     else{
         // Get a random image path for hearts
@@ -82,6 +95,7 @@ function showRandomImage(love) {
     // Automatically hide the overlay after 1.2 seconds
     setTimeout(function () {
         effect.style.display = 'none';
+        stopShakeAnimation();
     }, 1200);
 }
 
