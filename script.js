@@ -96,13 +96,11 @@ function showRandomImage(love) {
     gifOverlay.src = randomImagePath;
 
     effect.style.display = 'flex';
-    effect.style.z-index = '9999';
 
     // Automatically hide the overlay after 1.2 seconds
     setTimeout(function () {
         stopShakeAnimation();
         effect.style.display = 'none';
-        effect.style.z-index = '-9999';
     }, 1200);
 }
 
