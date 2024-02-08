@@ -2,6 +2,10 @@
 const leftButton = document.getElementById('leftButton');
 const rightButton = document.getElementById('rightButton');
 
+const effect = document.getElementById("effect");
+    effect.style.display = 'none';
+
+
 leftButton.addEventListener('click', function() {
     this.disabled=true;
     rightButton.disabled=true;
@@ -73,7 +77,6 @@ function stopShakeAnimation() {
 //Im tired
 function showRandomImage(love) {
     const gifOverlay = document.getElementById('gifOverlay');
-    const effect = document.getElementById('effect');
     var randomImagePath;
     var nukeEffect;
     if(!love){
